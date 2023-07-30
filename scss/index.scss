@@ -1,0 +1,101 @@
+body {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 576px) {
+  #inputToDo {
+    margin: 0px 0px 10px 0px !important;
+  }
+}
+
+// PATTERNS
+.c-pointer {
+  cursor: pointer;
+}
+
+.display-non {
+  display: none !important;
+}
+
+// checked to do
+.checked {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+// alerts
+.ajs-message {
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+
+.ajs-message.ajs-success {
+  color: #054213;
+  border-color: #054213;
+}
+
+.ajs-message.ajs-warning {
+  color: #524906;
+  border-color: #524906;
+}
+
+.ajs-message.ajs-error {
+  color: #520b0b;
+  border-color: #520b0b;
+}
+
+.ajs-message.ajs-checked {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #31708f;
+}
+
+// ==========
+
+// Main styles
+.my-todo-list {
+  list-style-type: none;
+
+  .my-todo-List__item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fffff2;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: #ffffe2;
+      border-radius: 10px;
+    }
+
+    .my-todo-title {
+      position: relative;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      // block edit wrapper (input & btn)
+      .my-edit-wrapper {
+        position: absolute;
+        top: -6px;
+        left: 0;
+        width: 300px;
+      }
+    }
+
+    .my-btn-delete {
+      background-color: transparent;
+      border: none;
+      transition: 0.1s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.panel-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}

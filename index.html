@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO LIST</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./icons/checklist.svg" />
+    <!-- Bootstrap icons CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap-icons.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <!-- Alertify CSS -->
+    <link rel="stylesheet" href="./libs/alertify/css/alertify.min.css" />
+    <!-- jQueri UI CSS -->
+    <!-- <link rel="stylesheet" href="./jqueri/jqueri-ui/css/jquery-ui.min.css" /> -->
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Main title -->
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">
+            <em>sortable</em> To do list <em>with paginatoin</em>
+          </h1>
+        </div>
+      </div>
+
+      <div class="row justify-content-center mb-5">
+        <!-- Input to do -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <input
+            id="inputToDo"
+            type="text"
+            class="form-control"
+            placeholder="add new item"
+          />
+        </div>
+        <!-- Button add -->
+        <div class="col-12 col-sm-3 col-lg-2 text-center">
+          <button id="btnAddToDo" type="button" class="btn btn-success w-100">
+            Add to do
+          </button>
+        </div>
+      </div>
+
+      <!-- To Do List -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-9 col-lg-6">
+          <ul id="toDoList" class="m-0 p-0 my-todo-list">
+            <!-- tasks... -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQueri JS -->
+    <script src="./jqueri/query-3.7.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Alertify JS -->
+    <script src="./libs/alertify/js/alertify.min.js"></script>
+    <!-- jQueri UI JS -->
+    <script src="./jqueri/jqueri-ui/js/jquery-ui.min.js"></script>
+    <!-- Paginathing JS -->
+    <script src="./libs/paginathing/paginathing.min.js"></script>
+    <!-- My JS -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
